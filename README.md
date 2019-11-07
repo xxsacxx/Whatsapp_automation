@@ -33,6 +33,10 @@ scheduler.py  : for scheduling any fn at any defined time
 Inspiration credit :
 
 ![I Wrote a Script to WhatsApp My Parents Every Morning in Just 20 Lines of Python Code](https://medium.com/better-programming/i-wrote-a-script-to-whatsapp-my-parents-every-morning-in-just-20-lines-of-python-code-5d203c3b36c1)
+
+
 ![IP_CHANGE](https://github.com/coconauts/IP-change/blob/master/ip_change.py)
+
+
 ![Accessing Google Calendar Events Data using Python](https://towardsdatascience.com/accessing-google-calendar-events-data-using-python-e915599d3ae2)
 
