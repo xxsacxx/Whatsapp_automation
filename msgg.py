@@ -16,9 +16,9 @@ formatter    = logging.Formatter('%(asctime)s : %(levelname)s : %(name)s : %(mes
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
-
-twilio_sid = 'ACb9ed233b3bf68750f92f519d751a3e2a'
-auth_token = '5852af92fa65660da6369c76f588faec'
+#enter twilio_sid and token
+twilio_sid = ''
+auth_token = ''
 whatsapp_client = Client(twilio_sid, auth_token)
 
 def whtsapp_ip_msg(ip,event=None, context=None):
@@ -30,13 +30,14 @@ def whtsapp_ip_msg(ip,event=None, context=None):
 
     # keep adding contacts to this dict to send
     # them the message
-    contact_directory = {'Shashi':'+919440585819'}
+    contact_directory = {'XXX':'+911234567890'}
 
     for key, value in contact_directory.items():
         
         people = whatsapp_client.messages.create(
                 body = 'ip has changed to  {} '.format(ip),
-                from_= 'whatsapp:+14155238886',
+                #enter twilio_number
+                from_= 'whatsapp:+14155XXXXXX',
                 to='whatsapp:' + value,
 
             )
@@ -46,13 +47,14 @@ def whtsapp_ip_msg(ip,event=None, context=None):
 def whtsapp_cal_alert_msg(msg,tme,event=None, context=None):
     tme = (tme.split('T'))[0]
     tme = datetime.strptime(tme, '%Y-%m-%d')
-    contact_directory = {'Sachin':'+918840372022'}
+    contact_directory = {'XXX':'+911234567890'}
     logger.info('sending message as {0}'.format(msg))
     for key, value in contact_directory.items():
             
             people = whatsapp_client.messages.create(
                     body = 'your recent event is {0} which is starting at {1}'.format(msg,tme),
-                    from_= 'whatsapp:+14155238886',
+                    #enter twilio_number
+                    from_= 'whatsapp:+14155XXXXXX',
                     to='whatsapp:' + value,
 
                 )
