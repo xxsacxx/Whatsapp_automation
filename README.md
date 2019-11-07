@@ -3,7 +3,7 @@
 
 1 - Use this to get alerts of events from Google Calendar on your WhatsApp
 
-2- External Ip change on WhatsApp
+2- External Ip change notification on WhatsApp
 
 3- Schedule your whatsapp message delivery for certain time (don't miss anniversaries,birthdays,follow ups)
 
